@@ -7,4 +7,8 @@ export class MobiPrintWeb extends WebPlugin implements MobiPrintPlugin {
     console.log('ECHO', options);
     return options;
   }
+  async printReceipt(options: { value: string }): Promise<{ value: string }> {
+    console.log('ECHO', options);
+    return options;
+  }
 }
