@@ -1,6 +1,6 @@
 {
   "name": "capacitor-printer",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "description": "Use ionic framework  in mobiIot to print receipt",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -8,6 +8,7 @@
   "unpkg": "dist/plugin.js",
   "files": [
     "android/src/main/",
+    "android/libs/",
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",

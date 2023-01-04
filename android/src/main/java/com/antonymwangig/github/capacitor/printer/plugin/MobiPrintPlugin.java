@@ -13,14 +13,6 @@ public class MobiPrintPlugin extends Plugin {
 
     private MobiPrint implementation = new MobiPrint();
 
-    @PluginMethod
-    public void echo(PluginCall call) {
-        String value = call.getString("value");
-
-        JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
-        call.resolve(ret);
-    }
 
 
     @PluginMethod
