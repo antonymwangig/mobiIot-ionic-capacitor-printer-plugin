@@ -2,6 +2,15 @@ package com.antonymwangig.github.capacitor.printer.plugin;
 import android.os.StrictMode;
 import android.util.Log;
 import android.content.Context;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.InputStream;
+import java.text.MessageFormat;
+import java.util.Locale;
+
+
+import com.google.zxing.BarcodeFormat;
 import com.mobiwire.CSAndroidGoLib.CsPrinter;
 import com.mobiwire.CSAndroidGoLib.AndroidGoCSApi;
 
@@ -78,7 +87,7 @@ public class MobiPrint {
 
 
 
-        printer.print( this);
+        printer.print(context);
 
 
 
@@ -148,14 +157,14 @@ public class MobiPrint {
      {
          char[] name_array=name.toCharArray();
          StringBuilder builder=new StringBuilder();
-         if (name.length()<=23)
+         if (name.length()<=19)
          {
              builder.append(name);
-             for (int i = 0; i < (23-name.length()); i++) {
+             for (int i = 0; i < (19-name.length()); i++) {
                  builder.append(" ");
              }
          }else {
-             builder.append(name.substring(0,22)).append(" ");
+             builder.append(name.substring(0,18)).append(" ");
          }
 
          return builder.toString();

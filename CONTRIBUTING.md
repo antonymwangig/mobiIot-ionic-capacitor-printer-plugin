@@ -5,6 +5,7 @@ This guide provides instructions for contributing to this Capacitor plugin.
 ## Developing
 Antony Mwangi (antonymwangig)
 
+
 ### Local Setup
 
 1. Fork and clone the repo.
