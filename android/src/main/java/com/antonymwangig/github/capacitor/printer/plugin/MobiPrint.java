@@ -45,7 +45,7 @@ public class MobiPrint {
 
 
         StringBuilder item_headers = new StringBuilder();
-        item_headers.append("ITEM        QTY   PRICE   AMOUNT");
+        item_headers.append("ITEM       QTY  PRICE   AMOUNT");
         item_headers.append("\n--------------------------------" + "\n");
         printer.printText(item_headers.toString());
 
@@ -103,14 +103,14 @@ public class MobiPrint {
      {
          char[] name_array=name.toCharArray();
          StringBuilder builder=new StringBuilder();
-         if (name.length()<=11)
+         if (name.length()<=10)
          {
              builder.append(name);
-             for (int i = 0; i <= (11-name.length()); i++) {
+             for (int i = 0; i <= (10-name.length()); i++) {
                  builder.append(" ");
              }
          }else {
-             builder.append(name.substring(0,10)).append(" ");
+             builder.append(name.substring(0,9)).append(" ");
          }
 
          return builder.toString();
@@ -120,16 +120,16 @@ public class MobiPrint {
      {
          char[] name_array=name.toCharArray();
          StringBuilder builder=new StringBuilder();
-         if (name.length()<=6)
+         if (name.length()<=4)
          {
              builder.append(name);
-             for (int i = 0; i < 6-name_array.length; i++) {
+             for (int i = 0; i < 5-name_array.length; i++) {
                  builder.append(" ");
              }
          }
          else
          {
-             builder.append(name.substring(0,7));
+             builder.append(name.substring(0,5));
          }
          return builder.toString();
 
@@ -138,10 +138,10 @@ public class MobiPrint {
      {
          char[] name_array=name.toCharArray();
          StringBuilder builder=new StringBuilder();
-         if (name.length()<=6)
+         if (name.length()<=7)
          {
              builder.append(name);
-             for (int i = 0; i <= 7-name_array.length; i++) {
+             for (int i = 0; i <= 8-name_array.length; i++) {
                  builder.append(" ");
              }
          }

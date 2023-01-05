@@ -53,8 +53,8 @@ npx cap sync
     }
 
 
-<img src="print1.jpg" width="300"/>
-<img src="print2.jpg" width="300"/>
+<img src="https://github.com/antonymwangig/mobiIot-ionic-capacitor-printer-plugin/raw/main/print1.jpg" width="300"/>
+<img src="https://github.com/antonymwangig/mobiIot-ionic-capacitor-printer-plugin/raw/main/print2.jpg" width="300"/>
 ## API
 
 <docgen-index>
